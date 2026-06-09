@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "seed": "tsx prisma/seed.ts",
-    "db:migrate": "prisma migrate deploy",
-    "postinstall": "prisma generate"
+    "db:migrate": "prisma db push",
+    "postinstall": "prisma generate && prisma db push"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
